@@ -326,8 +326,7 @@ $(document).ready(function () {
     }
 
     function playMusic(status) {
-        // nyancat is taking from wikipedia:
-        //
+        // nyancat audio file is taking from wikipedia
         nyanCat = new Audio('nyan_cat.ogg');
         nyanCat.addEventListener('ended', function() {
             this.currentTime = 0;
