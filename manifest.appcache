@@ -1,0 +1,45 @@
+CACHE MANIFEST
+# Wed Oct 22 16:44:15 CEST 2014
+
+CACHE:
+# HTML files
+index.html
+
+# Images
+images/app-icon-01.png
+images/app-icon-120.png
+images/app-icon-128.png
+images/app-icon-152.png
+images/app-icon-180.png
+images/app-icon-192.png
+images/app-icon-60.png
+images/app-icon-76.png
+
+images/racer.png
+images/lemoncar.png
+images/mangocar.png
+images/pearcar.png
+images/strawberrycar.png
+
+images/crash.png
+images/palm.png
+images/palmtree.png
+
+images/splash-screen-01.png
+images/splash-screen-1242.png
+images/splash-screen-320.png
+images/splash-screen-640-1096.png
+images/splash-screen-640.png
+images/splash-screen-750.png
+
+# JS files
+js/app.js
+
+# CSS files
+css/main.css
+
+# Audio files
+nyan_cat.ogg
+
+NETWORK:
+*

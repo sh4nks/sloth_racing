@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html manifest="manifest.appcache">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="description" content="Sloth Racing is a racing game where you drive a sloth on a banana.">
+            <meta name="author" content="Amanda Hjalmarsson, Peter Justin">
+
+            <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+            <link href="css/main.css" rel="stylesheet" type="text/css">
+            <!-- android/apple web app -->
+            <meta name="mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+
+            <!-- App icons for different devices -->
+            <!-- iOS: -->
+            <link rel="apple-touch-icon" href="images/app-icon-60.png"> <!-- 60x60) -->
+            <link rel="apple-touch-icon" sizes="76x76" href="images/app-icon-76.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="images/app-icon-120.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="images/app-icon-152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="images/app-icon-180.png">
+            <!-- Android: -->
+            <link rel="icon" sizes="128x128" href="images/app-icon-128.png">
+            <link rel="icon" sizes="192x192" href="images/app-icon-192.png">
+
+            <!-- iPhone 3GS, iPod Touch -->
+            <link rel="apple-touch-startup-image" href="images/splash-screen-320.png" media="screen and (max-device-width : 320px)">
+            <!-- iPhone 4, 4S and 2011 iPod Touch -->
+            <link rel="apple-touch-startup-image" href="images/splash-screen-640.png" media="(max-device-width : 480px)">
+            <!-- iPhone 5 and 2012 iPod Touch -->
+            <link rel="apple-touch-startup-image" href="images/splash-screen-640-1096.png" media="(max-device-width : 548px)">
+            <!-- iPhone 6 -->
+            <link rel="apple-touch-startup-image" href="images/splash-screen-750.png" media="(max-device-width: 375px)">
+            <!-- iPhone 6+ -->
+            <link rel="apple-touch-startup-image" href="images/splash-screen-1242.png" media="(max-device-width: 414px) and (max-device-height: 736px)">
+
+            <title>Sloth Racing</title>
+
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+            <script type="text/javascript" src="js/app.js"></script>
+        </head>
+
+    <body>
+        <img id="racer" src="images/racer.png" alt="Player">
+        <img id="lemoncar" src="images/lemoncar.png" alt="Lemon Car">
+        <img id="mangocar" src="images/mangocar.png" alt="Mango Car">
+        <img id="pearcar" src="images/pearcar.png" alt="Pear Car">
+        <img id="strawberrycar" src="images/strawberrycar.png" alt="Strawberry Car">
+        <img id="crash" src="images/crash.png" alt="Crash!">
+
+        <div class="additional-info">
+            <div class="content">
+                <form id="startGame" style="float: left;">
+                    Username: <input id="inputUsername" type="text" name="username" required />
+                    <input id="startGameButton" type="submit" name="startGame" value="Start!" onsubmit="startGame();"/>
+                </form>
+
+                <form id="restartGame" style="float: right;">
+                    <input id="restartGameButton" type="submit" name="restartGame" value="Restart" onsubmit="restartGame();" disabled />
+                </form>
+
+                <label id="menulabel" style="clear: both; display: block;"></label>
+
+                <nav id="topnavigation">
+                    <ul>
+                        <li>
+                            <strong>Highscore:</strong> <span id="highscore">n/a</span>
+                        </li>
+                        <li>
+                            <strong>Current Score:</strong> <span id="currentscore">n/a</span>
+                        </li>
+                        <li>
+                            <strong>Location:</strong> <span id="geolocation">n/a</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="canvas-container">
+                    <canvas id="myCanvas" width="800" height="800">
+                    <!-- Insert fallback content here -->
+                    </canvas>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copy">
+                &copy; 2014 - Amanda Hjalmarsson &amp; Peter Justin
+            </div>
+        </footer>
+    </body>
+</html>

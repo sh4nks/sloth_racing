@@ -1,0 +1,102 @@
+body
+{
+  background: -webkit-linear-gradient(darkgreen, green); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(darkgreen, green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(darkgreen, green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(darkgreen, green); /* Standard syntax */
+}
+.additional-info{
+    width: 100%;
+    font-family: 'Amatic SC', arial, serif;
+    font-size: 22px;
+        background-color: white;
+}
+
+.content {
+    width:40%;
+    margin: 0 auto;
+}
+
+#topnavigation ul {
+    list-style: none;
+    padding-left:0;
+    margin-top: 9px;
+}
+
+#startGame {
+    font-weight: 700;
+}
+
+#restartGame input{
+
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: table;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.canvas-container {
+
+    max-width: 800px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#myCanvas {
+    width: 100%;
+    height: auto;
+    background-color: green;
+}
+
+footer {
+    min-width:320px;
+    margin:auto;
+    font-family: Arial;
+    border-top: solid 2px #aaaaaa;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    color: #aaaaaa;
+    font-size: 9px;
+    line-height: 11px;
+    background-color: white;
+}
+
+.copy {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+@media (min-width: 550px) {
+.content {
+    width:20%;
+}
+
+
+footer{
+    font-size: 11px;
+    line-height: 13px;
+    padding-bottom: 5px;
+}
+
+}
+
+@media (min-width: 800px) {
+.copy {
+    width: 20%;
+    margin: 0 auto;
+}
+
+}
